@@ -6,7 +6,7 @@ LABEL owner="Sunita"
 #executing command to update apache
 RUN yum update -y 
 #executing command to install apache
-RUN yum install -yum
+RUN yum install httpd -y
 #the file containg what content the user will see
 COPY index.html /var/www/html/
 #container will listen on port 80
